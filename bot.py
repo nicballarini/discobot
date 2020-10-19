@@ -3,7 +3,7 @@ import discord
 # import asyncio
 import random
 
-with open("config.yml", 'r') as ymlfile:
+with open("./config.yml", 'r') as ymlfile:
     cfg = yaml.load(ymlfile, Loader=yaml.BaseLoader)
 
 TOKEN = cfg['bot_token']
