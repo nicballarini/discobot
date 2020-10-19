@@ -1,10 +1,10 @@
 FROM python:3
 
-RUN mkdir /src
-WORKDIR /src
-COPY bot.py /src
-COPY config.yml /src
-COPY requirements.txt /src
+# RUN mkdir /src
+# WORKDIR /src
+COPY bot.py /
+COPY config.yml /
+COPY requirements.txt /
 
 RUN pip install -r requirements.txt
 
