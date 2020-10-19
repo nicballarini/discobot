@@ -5,3 +5,4 @@ services:
       context: .
       dockerfile: dockerfile
     image: result/latest
+    container_name: discobot
