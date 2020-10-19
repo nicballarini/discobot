@@ -1,4 +1,4 @@
-FROM python:3.8-slim
+FROM python:3.8
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends libc-dev
@@ -9,4 +9,7 @@ COPY . .
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-CMD [ "python", "bot.py" ]
+RUN useradd appuser && chown -R appuser /app
+USER appuser
+
+CMD [ "python", "./bot.py" ]
