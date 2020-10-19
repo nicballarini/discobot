@@ -6,6 +6,7 @@ ADD bot.py /src
 ADD config.yml /src
 ADD requirements.txt /src
 
+
 RUN pip install -r requirements.txt
 
 CMD [ "python", "./bot.py" ]
