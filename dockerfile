@@ -2,6 +2,6 @@ FROM python:3
 
 ADD bot.py /
 
-RUN pip install yaml, discord, random
+RUN pip install pyyaml, discord, random
 
 CMD [ "python", "./bot.py" ]
