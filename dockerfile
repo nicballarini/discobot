@@ -1,7 +1,12 @@
-FROM python:3
+FROM python:3.8-slim
 
-COPY . /
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends libc-dev
 
-RUN pip install -r requirements.txt
+WORKDIR /app
 
-CMD python bot.py
+COPY . .
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+CMD [ "python", "bot.py" ]
