@@ -35,7 +35,22 @@ async def on_message(message):
                           (
                               'Cool. Cool cool cool cool cool cool cool, '
                               'no doubt no doubt no doubt no doubt.'
-                          )
+                          ),
+                          '“Title of your sex tape.” — Jake Peralta',
+                          '“Sarge, with all due respect, I am gonna completely ignore everything you just said.” — Jake Peralta',
+                          '“I ate one string bean. It tasted like fish vomit. That was it for me.” – Sergeant Jeffords',
+                          '“The English language can not fully capture the depth and complexity of my thoughts, so I\’m incorporating emojis into my speech to better express myself. Winky face.” – Gina Linetti',
+                          '“A place where everybody knows your name is hell. You\’re describing hell.” – Rosa Diaz',
+                          '“Cool, cool, cool, cool, cool. No doubt, no doubt, no doubt.” – Jake Peralta',
+                          '“If I die, turn my tweets into a book.” – Gina Linetti',
+                          '“Fine. but in protest, I’m walking over there extremely slowly!” – Jake',
+                          '“Jake, why don\’t you just do the right thing and jump out of a window?” – Gina',
+                          '“I asked them if they wanted to embarrass you, and they instantly said yes.” – Captain Holt',
+                          '“Captain Wuntch. Good to see you. But if you’re here, who\’s guarding Hades?” – Captain Holt',
+                          '“I\’m playing Kwazy Cupcakes, I\’m hydrated as hell, and I\’m listening to Sheryl Crow. I\’ve got my own party going on.” – Terry Jeffords',
+                          '“Anyone over the age of six celebrating a birthday should go to hell.” – Rosa Diaz',
+                          '“Captain, turn your greatest weakness into your greatest strength. Like Paris Hilton RE: her sex tape.” – Gina Linetti',
+                          '“Title of your sex tape.” — Amy Santiago'
                           ]
     print('message.content', message.content)
     print(message.author, message)
