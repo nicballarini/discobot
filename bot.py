@@ -66,13 +66,11 @@ async def on_message(message):
     if message.content == '99!':
         response = random.choice(brooklyn_99_quotes)
         await message.channel.send(response)
-        await message.delete()
 
 
     if message.content == 'Let’s overthrow the lukian dictatorship!!!!':
         response = 'One does not establish a dictatorship in order to safeguard a revolution; one makes the revolution in order to establish the dictatorship. -Orwell, 1984'
         await message.channel.send(response)
-        await message.delete()
 
 
     if message.content == 'no homo':
