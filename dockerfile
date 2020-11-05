@@ -9,9 +9,9 @@ WORKDIR /app
 
 COPY . .
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install -r requirements.txt
 
 RUN useradd appuser && chown -R appuser /app
 USER appuser
 
-CMD [ "python", "/app/bot.py" ]
+CMD ["python", "/app/bot.py"]

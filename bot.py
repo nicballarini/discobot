@@ -29,7 +29,7 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    mirror_mirror = ['you\'re fucking handsome', 'wow, gorgeous', 'i can\'t believe it, stunning']
+    mirror_mirror = ['you\'re fucking handsome', 'wow, gorgeous', 'i can\'t believe it, stunning','fucking ewww bro']
     brooklyn_99_quotes = ['I\'m the human form of the 💯 emoji.',
                           'Bingpot!',
                           (
@@ -56,10 +56,6 @@ async def on_message(message):
     print(message.author, message)
     # print('message.channel.id', message.channel.id)
     if message.content == 'mirror mirror on the wall.':
-        if message.author.name == 'lukeOida':
-            response = 'fucking ewww bro'
-            await message.channel.send(response)
-        else:
             response = random.choice(mirror_mirror)
             await message.channel.send(response)
 

@@ -1,8 +1,10 @@
 version: '3'
 services:
-  myservice:
+  discobot:
     build:
       context: .
       dockerfile: dockerfile
     image: discobot/latest
+    ports:
+      - 5492:5492
     container_name: discobot
