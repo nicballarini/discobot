@@ -64,7 +64,7 @@ async def on_message(message):
         await message.channel.send(response)
 
 
-    if message.content == 'Let’s overthrow the lukian dictatorship!!!!':
+    if message.content == 'Let’s overthrow the lukian dictatorship':
         response = 'One does not establish a dictatorship in order to safeguard a revolution; one makes the revolution in order to establish the dictatorship. -Orwell, 1984'
         await message.channel.send(response)
 
